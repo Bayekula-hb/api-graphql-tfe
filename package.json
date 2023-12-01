@@ -1,0 +1,11 @@
+{
+  "name": "api_graphql_tfe",
+  "version": "1.0.0",
+  "description": "Une api graphql pour la gestion de titres fonciers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hobedbayekula@gmail.com",
+  "license": "ISC"
+}
