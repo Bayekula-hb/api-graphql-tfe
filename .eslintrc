@@ -1,20 +1,25 @@
 {
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "ecmaVersion": 2019,
       "sourceType": "module",
       "ecmaFeatures": {
-        "jsx": true
+        "jsx": true,
+        "ts" : true
       }
     },
     "plugins": [
-      "jest"
+      "jest", 
+      "@typescript-eslint"
     ],
     "extends": [
       "eslint:recommended",
-      "eslint-config-prettier"
+      "eslint-config-prettier",
+      // "plugin:@typescript-eslint/recommended"
     ],
     "rules": {
-      "strict": [ "error", "never"]
+      "strict": [ "error", "never"],
+      "@typescript-eslint/no-unused-vars": "off"
     },
     "overrides": [
       {
@@ -30,6 +35,9 @@
       }
     ],
     "env": {
-      "browser": true
+      "browser": true,
+      "node": true,
+      "commonjs": true,
+      "es6": true
     }
   }
